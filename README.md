@@ -106,6 +106,7 @@ Get the latest version of the pipeline. **Don't forget to add `--recursive`**. A
 
 ```
 $ git clone https://github.com/kundajelab/atac_dnase_pipelines --recursive
+$ cd atac_dnase_pipelines/
 ```
 
 ## Dependencies
@@ -147,7 +148,9 @@ Install genome data for a specific genome `[GENOME]`. Currently `hg19`, `mm9`, `
 
 ```
 # DO NOT run this on a login node
-$ bash install_genome_data.sh [GENOME] [DATA_DIR]
+$ mkdir genome_data
+$ bash install_genome_data.sh hg38 genome_data/
+$ bash install_genome_data.sh mm10 genome_data/
 ```
 
 If you have super-user privileges on your system, it is recommended to install genome data on `/your/data/bds_pipeline_genome_data` and share them with others.
