@@ -80,7 +80,11 @@ to PATH in your /your/home/.bashrc ? [yes|no]
 [no] >>> yes
 ```
 
-Remove any other Anaconda from your `$PATH`. Check your loaded modules with `$ module list` and unload any Anaconda modules in your `$HOME/.bashrc`. Open a new terminal after installation.
+Remove any other Anaconda from your `$PATH`. Check your loaded modules with `$ module list` and unload any Anaconda modules in your `$HOME/.bashrc`. 
+
+```
+$ source ~/.bashrc
+```
 
 ## BigDataScript
 
