@@ -93,6 +93,20 @@ elif [ $GENOME == "mm10" ]; then
   REG2MAP="http://mitra.stanford.edu/kundaje/genome_data/mm10/ataqc/mm10_dnase_avg_fseq_signal_formatted.txt.gz"
   ROADMAP_META="http://mitra.stanford.edu/kundaje/genome_data/mm10/ataqc/mm10_dnase_avg_fseq_signal_metadata.txt"
 
+elif [ $GENOME == "macFas5" ]; then
+
+  REF_FA="http://hgdownload.soe.ucsc.edu/goldenPath/macFas5/bigZips/macFas5.fa.gz"
+  BLACKLIST="http://hgdownload.soe.ucsc.edu/goldenPath/macFas5/bigZips/macFas5.trf.bed.gz"
+
+  # data for ATAQC
+  TSS_ENRICH=
+  DNASE=
+  PROM="http://hgdownload.soe.ucsc.edu/goldenPath/macFas5/bigZips/upstream1000.fa.gz"
+  ENH=
+  REG2MAP_BED=
+  REG2MAP=
+  ROADMAP_META=
+
 elif [ $GENOME == "macam7" ]; then
 
   REF_FA="http://www.unmc.edu/rhesusgenechip/MacaM_Rhesus_Genome_v7.fasta.bz2"
