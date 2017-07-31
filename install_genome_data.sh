@@ -99,7 +99,7 @@ elif [ $GENOME == "macFas5" ]; then
   BLACKLIST="http://hgdownload.soe.ucsc.edu/goldenPath/macFas5/bigZips/macFas5.trf.bed.gz"
 
   # data for ATAQC
-  TSS_ENRICH=
+  TSS_ENRICH="http://hgdownload.soe.ucsc.edu/goldenPath/macFas5/bigZips/upstream1000.fa.gz"
   DNASE=
   PROM="http://hgdownload.soe.ucsc.edu/goldenPath/macFas5/bigZips/upstream1000.fa.gz"
   ENH=
