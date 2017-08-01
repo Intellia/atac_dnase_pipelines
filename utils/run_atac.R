@@ -1,10 +1,11 @@
-runAtac <- function(atac.bds, r1, r2, genome.build, para, samp.name){
+runAtac <- function(atac.bds, r1, r2, genome.build, para, samp.name, mapq_thresh=20){
 	out.dir <- paste0(samp.name, '_atac/')
 	dir.create(out.dir)
 	setwd(out.dir)
 	cmd <- paste0("bds ", atac.bds, 
 		" -species ", genome.build, 
 		" -nth ", para,
+		" -mapq_thresh ", mapq_thresh,
 		" -fastq1_1 ", r1,
 		" -fastq1_2 ", r2)
 	system(cmd)
