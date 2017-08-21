@@ -149,6 +149,7 @@ Install genome data for a specific genome `[GENOME]`. Currently `hg19`, `mm9`, `
 ```
 # DO NOT run this on a login node
 $ mkdir genome_data
+$ source ~/.bashrc
 $ bash install_genome_data.sh hg38 genome_data/
 $ bash install_genome_data.sh mm10 genome_data/
 ```
@@ -209,6 +210,7 @@ We recommend using BASH to run pipelines.
 
 For general use, use the following command line: (for PE data set)
 ```
+$ source activate bds_atac
 $ bds atac.bds -species [SPECIES; hg19, mm9, ... ] -nth [NUM_THREADS] -fastq1_1 [READ1] -fastq1_2 [READ2]
 ```
 
